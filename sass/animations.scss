@@ -1,0 +1,55 @@
+@import "compass";
+
+// Start time
+$hours-start: 3;
+$minutes-start: 28;
+$seconds-start: 30;
+
+
+$hours: 12;
+$hours-degrees: 360deg / $hours;
+$hours-degrees-start: $hours-degrees * $hours-start;
+$hours-percent: 100% / $hours;
+
+
+$minutes: 60;
+$minutes-degrees: 360deg / $minutes;
+$minutes-degrees-start: $minutes-degrees * $minutes-start;
+$minutes-percent: 100% / $minutes;
+
+$seconds: 60;
+$seconds-degrees: 360deg / $seconds;
+$seconds-degrees-start: $seconds-degrees * $seconds-start;
+$seconds-percent: 100% / $seconds;
+
+
+@include keyframes(hour-hand-rotate) {
+	from {
+		
+		@include rotate(0deg + $hours-degrees-start);
+	}
+	to {
+		@include rotate(360deg + $hours-degrees-start);
+	}
+}
+
+@include keyframes(minute-hand-rotate) {
+	from {
+		@include rotate(0deg + $minutes-degrees-start);
+	}
+	to {
+		@include rotate(360deg + $minutes-degrees-start);
+	}
+	
+}
+
+@include keyframes(second-hand-rotate) {
+	@for $m from 0 through $seconds {
+		$deltaDeg: $seconds-degrees * $m;
+		$sy: 10px * sin($deltaDeg);
+		$sx: 10px * cos($deltaDeg);
+		#{$m * $seconds-percent} {
+			@include rotate($deltaDeg + $seconds-degrees-start);
+		}
+	}
+}

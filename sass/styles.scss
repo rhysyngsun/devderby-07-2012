@@ -1,0 +1,227 @@
+@import "compass";
+@import "animations.scss";
+
+$clock-radius: 350px;
+
+#clock {
+	background: #E0E0E0;
+	width: $clock-radius * 2;
+	height: $clock-radius * 2;
+	position: relative;
+	
+	@include border-radius($clock-radius);
+
+}
+
+#hours {
+	position:relative;
+	left: 50%;
+	@for $hour from 1 through 12 {
+		div:nth-child(0n+#{$hour}) {
+			position: absolute;
+			margin-left: -25px;
+			height: 350px;
+			width: 50px;
+			
+			@include rotate(360deg/12*$hour);
+			@include transform-origin(center, bottom);
+			
+			//@include background-image(linear-gradient(to right, transparent 0%, transparent 48%, red 48%, red 52%, transparent 52%));
+			
+			span {
+				position:absolute;
+				font-size: 4em;
+				@include transform-origin(center, bottom);
+				height: 350px;
+				width: 50px;
+				text-align: center;
+			}
+		}
+	}
+	
+	/* begin hour adjustments */
+	
+	/* one o'clock needs no adjustment */
+	
+	/* two o'clock */
+	
+	div:nth-child(0n+2) {
+		span:nth-child(0n+1) {
+			@include rotate(-2deg);
+		}
+		span:nth-child(0n+2) {
+			@include rotate(2deg);
+		}
+	}
+	
+	/* three o'clock */
+	div:nth-child(0n+3) {
+		span:nth-child(0n+1) {
+			@include rotate(-3.5deg);
+		}
+		span:nth-child(0n+3) {
+			@include rotate(3.5deg);
+		}
+	}
+	
+	/* four o'clock */
+	div:nth-child(0n+4) {
+		span:nth-child(0n+1) {
+			@include rotate(-3deg);
+		}
+		span:nth-child(0n+2) {
+			@include rotate(1.5deg);
+		}
+	}
+	
+	
+	/* five o'clock needs no adjustment */
+	
+	
+	/* six o'clock */
+
+	div:nth-child(0n+6) {
+		span:nth-child(0n+1) {
+			@include rotate(-1.5deg);
+		}
+		span:nth-child(0n+2) {
+			@include rotate(3deg);
+		}
+	}
+	
+	
+	/* seven o'clock */
+
+	div:nth-child(0n+7) {
+		span:nth-child(0n+1) {
+			@include rotate(-3deg);
+		}
+		span:nth-child(0n+2) {
+			@include rotate(1.5deg);
+		}
+		span:nth-child(0n+3) {
+			@include rotate(4.5deg);
+		}
+	}
+	
+	
+	/* eight o'clock */
+
+	div:nth-child(0n+8) {
+		span:nth-child(0n+1) {
+			@include rotate(-4.5deg);
+		}
+		span:nth-child(0n+2) {
+			@include rotate(0deg);
+		}
+		span:nth-child(0n+3) {
+			@include rotate(3deg);
+		}
+		span:nth-child(0n+4) {
+			@include rotate(6deg);
+		}
+	}
+	
+	
+	/* nine o'clock */
+
+	div:nth-child(0n+9) {
+		span:nth-child(0n+1) {
+			@include rotate(-3deg);
+		}
+		span:nth-child(0n+2) {
+			@include rotate(2deg);
+		}
+	}
+	
+	/* ten o'clock needs no adjustment */
+	
+	/* eleven o'clock */
+
+	div:nth-child(0n+11) {
+		span:nth-child(0n+1) {
+			@include rotate(-2deg);
+		}
+		span:nth-child(0n+2) {
+			@include rotate(3deg);
+		}
+	}
+	
+	/* twelve o'clock */
+
+	div:nth-child(0n+12) {
+		span:nth-child(0n+1) {
+			@include rotate(-3deg);
+		}
+		span:nth-child(0n+2) {
+			@include rotate(2deg);
+		}
+		span:nth-child(0n+3) {
+			@include rotate(5deg);
+		}
+	}
+	
+	/* end hour adjustments */
+	
+	.inner-ring {
+		width: 0;
+		height: 0;
+		border: 3px solid black;
+		@include border-radius(350px);
+	}
+	
+	.outer-ring {
+		width: 0;
+		height: 0;
+		border: 3px solid black;
+		@include border-radius(325px);
+	}
+	
+}
+
+.centered {
+	position: absolute;
+	left: 50%;
+	bottom: 50%;
+	
+	@include transform-origin(center, bottom);
+}
+
+.aa {
+	outline: 1px solid transparent;
+}
+
+.hand {
+	@include box-shadow(black 0 0 10px);
+}
+
+#hour-hand {
+	background-color: #333;
+	width: 18px;
+	height: 300px;
+	
+	margin-left: -9px;
+	
+	@include animation(hour-hand-rotate 3600s infinite linear);
+}
+
+#minute-hand {
+	background-color: #333;
+	width: 12px;
+	height: 300px;
+	
+	margin-left: -6px;
+	
+	@include animation(minute-hand-rotate 3600s infinite linear);
+}
+
+#second-hand {
+	background-color: #333;
+	width: 6px;
+	height: 300px;
+	
+	margin-left: -3px;
+
+	@include animation(second-hand-rotate 60s infinite);
+}
+
