@@ -1914,6 +1914,12 @@
 }
 
 /* line 6, ../sass/styles.scss */
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 11, ../sass/styles.scss */
 #clock {
   background: #E0E0E0;
   width: 700px;
@@ -1926,7 +1932,7 @@
   border-radius: 350px;
 }
 
-/* line 16, ../sass/styles.scss */
+/* line 21, ../sass/styles.scss */
 #hours {
   position: relative;
   left: 50%;
@@ -1945,7 +1951,11 @@
   /* twelve o'clock */
   /* end hour adjustments */
 }
-/* line 20, ../sass/styles.scss */
+/* line 25, ../sass/styles.scss */
+#hours span {
+  font-family: Times New Roman;
+}
+/* line 30, ../sass/styles.scss */
 #hours div:nth-child(0n+1) {
   position: absolute;
   margin-left: -25px;
@@ -1962,7 +1972,7 @@
   -o-transform-origin: center bottom;
   transform-origin: center bottom;
 }
-/* line 31, ../sass/styles.scss */
+/* line 41, ../sass/styles.scss */
 #hours div:nth-child(0n+1) span {
   position: absolute;
   font-size: 4em;
@@ -1975,7 +1985,7 @@
   width: 50px;
   text-align: center;
 }
-/* line 20, ../sass/styles.scss */
+/* line 30, ../sass/styles.scss */
 #hours div:nth-child(0n+2) {
   position: absolute;
   margin-left: -25px;
@@ -1992,7 +2002,7 @@
   -o-transform-origin: center bottom;
   transform-origin: center bottom;
 }
-/* line 31, ../sass/styles.scss */
+/* line 41, ../sass/styles.scss */
 #hours div:nth-child(0n+2) span {
   position: absolute;
   font-size: 4em;
@@ -2005,7 +2015,7 @@
   width: 50px;
   text-align: center;
 }
-/* line 20, ../sass/styles.scss */
+/* line 30, ../sass/styles.scss */
 #hours div:nth-child(0n+3) {
   position: absolute;
   margin-left: -25px;
@@ -2022,7 +2032,7 @@
   -o-transform-origin: center bottom;
   transform-origin: center bottom;
 }
-/* line 31, ../sass/styles.scss */
+/* line 41, ../sass/styles.scss */
 #hours div:nth-child(0n+3) span {
   position: absolute;
   font-size: 4em;
@@ -2035,7 +2045,7 @@
   width: 50px;
   text-align: center;
 }
-/* line 20, ../sass/styles.scss */
+/* line 30, ../sass/styles.scss */
 #hours div:nth-child(0n+4) {
   position: absolute;
   margin-left: -25px;
@@ -2052,7 +2062,7 @@
   -o-transform-origin: center bottom;
   transform-origin: center bottom;
 }
-/* line 31, ../sass/styles.scss */
+/* line 41, ../sass/styles.scss */
 #hours div:nth-child(0n+4) span {
   position: absolute;
   font-size: 4em;
@@ -2065,7 +2075,7 @@
   width: 50px;
   text-align: center;
 }
-/* line 20, ../sass/styles.scss */
+/* line 30, ../sass/styles.scss */
 #hours div:nth-child(0n+5) {
   position: absolute;
   margin-left: -25px;
@@ -2082,7 +2092,7 @@
   -o-transform-origin: center bottom;
   transform-origin: center bottom;
 }
-/* line 31, ../sass/styles.scss */
+/* line 41, ../sass/styles.scss */
 #hours div:nth-child(0n+5) span {
   position: absolute;
   font-size: 4em;
@@ -2095,7 +2105,7 @@
   width: 50px;
   text-align: center;
 }
-/* line 20, ../sass/styles.scss */
+/* line 30, ../sass/styles.scss */
 #hours div:nth-child(0n+6) {
   position: absolute;
   margin-left: -25px;
@@ -2112,7 +2122,7 @@
   -o-transform-origin: center bottom;
   transform-origin: center bottom;
 }
-/* line 31, ../sass/styles.scss */
+/* line 41, ../sass/styles.scss */
 #hours div:nth-child(0n+6) span {
   position: absolute;
   font-size: 4em;
@@ -2125,7 +2135,7 @@
   width: 50px;
   text-align: center;
 }
-/* line 20, ../sass/styles.scss */
+/* line 30, ../sass/styles.scss */
 #hours div:nth-child(0n+7) {
   position: absolute;
   margin-left: -25px;
@@ -2142,7 +2152,7 @@
   -o-transform-origin: center bottom;
   transform-origin: center bottom;
 }
-/* line 31, ../sass/styles.scss */
+/* line 41, ../sass/styles.scss */
 #hours div:nth-child(0n+7) span {
   position: absolute;
   font-size: 4em;
@@ -2155,7 +2165,7 @@
   width: 50px;
   text-align: center;
 }
-/* line 20, ../sass/styles.scss */
+/* line 30, ../sass/styles.scss */
 #hours div:nth-child(0n+8) {
   position: absolute;
   margin-left: -25px;
@@ -2172,7 +2182,7 @@
   -o-transform-origin: center bottom;
   transform-origin: center bottom;
 }
-/* line 31, ../sass/styles.scss */
+/* line 41, ../sass/styles.scss */
 #hours div:nth-child(0n+8) span {
   position: absolute;
   font-size: 4em;
@@ -2185,7 +2195,7 @@
   width: 50px;
   text-align: center;
 }
-/* line 20, ../sass/styles.scss */
+/* line 30, ../sass/styles.scss */
 #hours div:nth-child(0n+9) {
   position: absolute;
   margin-left: -25px;
@@ -2202,7 +2212,7 @@
   -o-transform-origin: center bottom;
   transform-origin: center bottom;
 }
-/* line 31, ../sass/styles.scss */
+/* line 41, ../sass/styles.scss */
 #hours div:nth-child(0n+9) span {
   position: absolute;
   font-size: 4em;
@@ -2215,7 +2225,7 @@
   width: 50px;
   text-align: center;
 }
-/* line 20, ../sass/styles.scss */
+/* line 30, ../sass/styles.scss */
 #hours div:nth-child(0n+10) {
   position: absolute;
   margin-left: -25px;
@@ -2232,7 +2242,7 @@
   -o-transform-origin: center bottom;
   transform-origin: center bottom;
 }
-/* line 31, ../sass/styles.scss */
+/* line 41, ../sass/styles.scss */
 #hours div:nth-child(0n+10) span {
   position: absolute;
   font-size: 4em;
@@ -2245,7 +2255,7 @@
   width: 50px;
   text-align: center;
 }
-/* line 20, ../sass/styles.scss */
+/* line 30, ../sass/styles.scss */
 #hours div:nth-child(0n+11) {
   position: absolute;
   margin-left: -25px;
@@ -2262,7 +2272,7 @@
   -o-transform-origin: center bottom;
   transform-origin: center bottom;
 }
-/* line 31, ../sass/styles.scss */
+/* line 41, ../sass/styles.scss */
 #hours div:nth-child(0n+11) span {
   position: absolute;
   font-size: 4em;
@@ -2275,7 +2285,7 @@
   width: 50px;
   text-align: center;
 }
-/* line 20, ../sass/styles.scss */
+/* line 30, ../sass/styles.scss */
 #hours div:nth-child(0n+12) {
   position: absolute;
   margin-left: -25px;
@@ -2292,7 +2302,7 @@
   -o-transform-origin: center bottom;
   transform-origin: center bottom;
 }
-/* line 31, ../sass/styles.scss */
+/* line 41, ../sass/styles.scss */
 #hours div:nth-child(0n+12) span {
   position: absolute;
   font-size: 4em;
@@ -2305,7 +2315,7 @@
   width: 50px;
   text-align: center;
 }
-/* line 49, ../sass/styles.scss */
+/* line 59, ../sass/styles.scss */
 #hours div:nth-child(0n+2) span:nth-child(0n+1) {
   -webkit-transform: rotate(-2deg);
   -moz-transform: rotate(-2deg);
@@ -2313,7 +2323,7 @@
   -o-transform: rotate(-2deg);
   transform: rotate(-2deg);
 }
-/* line 52, ../sass/styles.scss */
+/* line 62, ../sass/styles.scss */
 #hours div:nth-child(0n+2) span:nth-child(0n+2) {
   -webkit-transform: rotate(2deg);
   -moz-transform: rotate(2deg);
@@ -2321,7 +2331,7 @@
   -o-transform: rotate(2deg);
   transform: rotate(2deg);
 }
-/* line 59, ../sass/styles.scss */
+/* line 69, ../sass/styles.scss */
 #hours div:nth-child(0n+3) span:nth-child(0n+1) {
   -webkit-transform: rotate(-3.5deg);
   -moz-transform: rotate(-3.5deg);
@@ -2329,7 +2339,7 @@
   -o-transform: rotate(-3.5deg);
   transform: rotate(-3.5deg);
 }
-/* line 62, ../sass/styles.scss */
+/* line 72, ../sass/styles.scss */
 #hours div:nth-child(0n+3) span:nth-child(0n+3) {
   -webkit-transform: rotate(3.5deg);
   -moz-transform: rotate(3.5deg);
@@ -2337,7 +2347,7 @@
   -o-transform: rotate(3.5deg);
   transform: rotate(3.5deg);
 }
-/* line 69, ../sass/styles.scss */
+/* line 79, ../sass/styles.scss */
 #hours div:nth-child(0n+4) span:nth-child(0n+1) {
   -webkit-transform: rotate(-3deg);
   -moz-transform: rotate(-3deg);
@@ -2345,7 +2355,7 @@
   -o-transform: rotate(-3deg);
   transform: rotate(-3deg);
 }
-/* line 72, ../sass/styles.scss */
+/* line 82, ../sass/styles.scss */
 #hours div:nth-child(0n+4) span:nth-child(0n+2) {
   -webkit-transform: rotate(1.5deg);
   -moz-transform: rotate(1.5deg);
@@ -2353,7 +2363,7 @@
   -o-transform: rotate(1.5deg);
   transform: rotate(1.5deg);
 }
-/* line 84, ../sass/styles.scss */
+/* line 94, ../sass/styles.scss */
 #hours div:nth-child(0n+6) span:nth-child(0n+1) {
   -webkit-transform: rotate(-1.5deg);
   -moz-transform: rotate(-1.5deg);
@@ -2361,7 +2371,7 @@
   -o-transform: rotate(-1.5deg);
   transform: rotate(-1.5deg);
 }
-/* line 87, ../sass/styles.scss */
+/* line 97, ../sass/styles.scss */
 #hours div:nth-child(0n+6) span:nth-child(0n+2) {
   -webkit-transform: rotate(3deg);
   -moz-transform: rotate(3deg);
@@ -2369,7 +2379,7 @@
   -o-transform: rotate(3deg);
   transform: rotate(3deg);
 }
-/* line 96, ../sass/styles.scss */
+/* line 106, ../sass/styles.scss */
 #hours div:nth-child(0n+7) span:nth-child(0n+1) {
   -webkit-transform: rotate(-3deg);
   -moz-transform: rotate(-3deg);
@@ -2377,7 +2387,7 @@
   -o-transform: rotate(-3deg);
   transform: rotate(-3deg);
 }
-/* line 99, ../sass/styles.scss */
+/* line 109, ../sass/styles.scss */
 #hours div:nth-child(0n+7) span:nth-child(0n+2) {
   -webkit-transform: rotate(1.5deg);
   -moz-transform: rotate(1.5deg);
@@ -2385,7 +2395,7 @@
   -o-transform: rotate(1.5deg);
   transform: rotate(1.5deg);
 }
-/* line 102, ../sass/styles.scss */
+/* line 112, ../sass/styles.scss */
 #hours div:nth-child(0n+7) span:nth-child(0n+3) {
   -webkit-transform: rotate(4.5deg);
   -moz-transform: rotate(4.5deg);
@@ -2393,7 +2403,7 @@
   -o-transform: rotate(4.5deg);
   transform: rotate(4.5deg);
 }
-/* line 111, ../sass/styles.scss */
+/* line 121, ../sass/styles.scss */
 #hours div:nth-child(0n+8) span:nth-child(0n+1) {
   -webkit-transform: rotate(-4.5deg);
   -moz-transform: rotate(-4.5deg);
@@ -2401,7 +2411,7 @@
   -o-transform: rotate(-4.5deg);
   transform: rotate(-4.5deg);
 }
-/* line 114, ../sass/styles.scss */
+/* line 124, ../sass/styles.scss */
 #hours div:nth-child(0n+8) span:nth-child(0n+2) {
   -webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg);
@@ -2409,7 +2419,7 @@
   -o-transform: rotate(0deg);
   transform: rotate(0deg);
 }
-/* line 117, ../sass/styles.scss */
+/* line 127, ../sass/styles.scss */
 #hours div:nth-child(0n+8) span:nth-child(0n+3) {
   -webkit-transform: rotate(3deg);
   -moz-transform: rotate(3deg);
@@ -2417,7 +2427,7 @@
   -o-transform: rotate(3deg);
   transform: rotate(3deg);
 }
-/* line 120, ../sass/styles.scss */
+/* line 130, ../sass/styles.scss */
 #hours div:nth-child(0n+8) span:nth-child(0n+4) {
   -webkit-transform: rotate(6deg);
   -moz-transform: rotate(6deg);
@@ -2425,7 +2435,7 @@
   -o-transform: rotate(6deg);
   transform: rotate(6deg);
 }
-/* line 129, ../sass/styles.scss */
+/* line 139, ../sass/styles.scss */
 #hours div:nth-child(0n+9) span:nth-child(0n+1) {
   -webkit-transform: rotate(-3deg);
   -moz-transform: rotate(-3deg);
@@ -2433,7 +2443,7 @@
   -o-transform: rotate(-3deg);
   transform: rotate(-3deg);
 }
-/* line 132, ../sass/styles.scss */
+/* line 142, ../sass/styles.scss */
 #hours div:nth-child(0n+9) span:nth-child(0n+2) {
   -webkit-transform: rotate(2deg);
   -moz-transform: rotate(2deg);
@@ -2441,7 +2451,7 @@
   -o-transform: rotate(2deg);
   transform: rotate(2deg);
 }
-/* line 142, ../sass/styles.scss */
+/* line 152, ../sass/styles.scss */
 #hours div:nth-child(0n+11) span:nth-child(0n+1) {
   -webkit-transform: rotate(-2deg);
   -moz-transform: rotate(-2deg);
@@ -2449,7 +2459,7 @@
   -o-transform: rotate(-2deg);
   transform: rotate(-2deg);
 }
-/* line 145, ../sass/styles.scss */
+/* line 155, ../sass/styles.scss */
 #hours div:nth-child(0n+11) span:nth-child(0n+2) {
   -webkit-transform: rotate(3deg);
   -moz-transform: rotate(3deg);
@@ -2457,7 +2467,7 @@
   -o-transform: rotate(3deg);
   transform: rotate(3deg);
 }
-/* line 153, ../sass/styles.scss */
+/* line 163, ../sass/styles.scss */
 #hours div:nth-child(0n+12) span:nth-child(0n+1) {
   -webkit-transform: rotate(-3deg);
   -moz-transform: rotate(-3deg);
@@ -2465,7 +2475,7 @@
   -o-transform: rotate(-3deg);
   transform: rotate(-3deg);
 }
-/* line 156, ../sass/styles.scss */
+/* line 166, ../sass/styles.scss */
 #hours div:nth-child(0n+12) span:nth-child(0n+2) {
   -webkit-transform: rotate(2deg);
   -moz-transform: rotate(2deg);
@@ -2473,7 +2483,7 @@
   -o-transform: rotate(2deg);
   transform: rotate(2deg);
 }
-/* line 159, ../sass/styles.scss */
+/* line 169, ../sass/styles.scss */
 #hours div:nth-child(0n+12) span:nth-child(0n+3) {
   -webkit-transform: rotate(5deg);
   -moz-transform: rotate(5deg);
@@ -2481,30 +2491,42 @@
   -o-transform: rotate(5deg);
   transform: rotate(5deg);
 }
-/* line 166, ../sass/styles.scss */
-#hours .inner-ring {
-  width: 0;
-  height: 0;
-  border: 3px solid black;
-  -webkit-border-radius: 350px;
-  -moz-border-radius: 350px;
-  -ms-border-radius: 350px;
-  -o-border-radius: 350px;
-  border-radius: 350px;
-}
-/* line 173, ../sass/styles.scss */
-#hours .outer-ring {
-  width: 0;
-  height: 0;
-  border: 3px solid black;
-  -webkit-border-radius: 325px;
-  -moz-border-radius: 325px;
-  -ms-border-radius: 325px;
-  -o-border-radius: 325px;
-  border-radius: 325px;
-}
 
 /* line 182, ../sass/styles.scss */
+.inner-ring {
+  position: absolute;
+  width: 578px;
+  height: 578px;
+  left: 50%;
+  top: 50%;
+  margin-left: -292px;
+  margin-top: -292px;
+  border: 3px solid black;
+  -webkit-border-radius: 289px;
+  -moz-border-radius: 289px;
+  -ms-border-radius: 289px;
+  -o-border-radius: 289px;
+  border-radius: 289px;
+}
+
+/* line 194, ../sass/styles.scss */
+.outer-ring {
+  position: absolute;
+  width: 662px;
+  height: 662px;
+  left: 50%;
+  top: 50%;
+  margin-left: -334px;
+  margin-top: -334px;
+  border: 3px solid black;
+  -webkit-border-radius: 331px;
+  -moz-border-radius: 331px;
+  -ms-border-radius: 331px;
+  -o-border-radius: 331px;
+  border-radius: 331px;
+}
+
+/* line 207, ../sass/styles.scss */
 .centered {
   position: absolute;
   left: 50%;
@@ -2516,23 +2538,23 @@
   transform-origin: center bottom;
 }
 
-/* line 190, ../sass/styles.scss */
+/* line 215, ../sass/styles.scss */
 .aa {
   outline: 1px solid transparent;
 }
 
-/* line 194, ../sass/styles.scss */
+/* line 219, ../sass/styles.scss */
 .hand {
   -webkit-box-shadow: black 0 0 10px;
   -moz-box-shadow: black 0 0 10px;
   box-shadow: black 0 0 10px;
 }
 
-/* line 198, ../sass/styles.scss */
+/* line 223, ../sass/styles.scss */
 #hour-hand {
   background-color: #333;
   width: 18px;
-  height: 300px;
+  height: 220px;
   margin-left: -9px;
   -webkit-animation: hour-hand-rotate 3600s infinite linear;
   -moz-animation: hour-hand-rotate 3600s infinite linear;
@@ -2541,11 +2563,11 @@
   animation: hour-hand-rotate 3600s infinite linear;
 }
 
-/* line 208, ../sass/styles.scss */
+/* line 233, ../sass/styles.scss */
 #minute-hand {
   background-color: #333;
   width: 12px;
-  height: 300px;
+  height: 320px;
   margin-left: -6px;
   -webkit-animation: minute-hand-rotate 3600s infinite linear;
   -moz-animation: minute-hand-rotate 3600s infinite linear;
@@ -2554,11 +2576,11 @@
   animation: minute-hand-rotate 3600s infinite linear;
 }
 
-/* line 218, ../sass/styles.scss */
+/* line 243, ../sass/styles.scss */
 #second-hand {
   background-color: #333;
   width: 6px;
-  height: 300px;
+  height: 320px;
   margin-left: -3px;
   -webkit-animation: second-hand-rotate 60s infinite;
   -moz-animation: second-hand-rotate 60s infinite;

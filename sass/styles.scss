@@ -3,6 +3,11 @@
 
 $clock-radius: 350px;
 
+body, html {
+	margin: 0;
+	padding: 0;
+}
+
 #clock {
 	background: #E0E0E0;
 	width: $clock-radius * 2;
@@ -16,6 +21,11 @@ $clock-radius: 350px;
 #hours {
 	position:relative;
 	left: 50%;
+	
+	span {
+		font-family: Times New Roman;
+	}
+	
 	@for $hour from 1 through 12 {
 		div:nth-child(0n+#{$hour}) {
 			position: absolute;
@@ -162,22 +172,37 @@ $clock-radius: 350px;
 	}
 	
 	/* end hour adjustments */
-	
-	.inner-ring {
-		width: 0;
-		height: 0;
-		border: 3px solid black;
-		@include border-radius(350px);
-	}
-	
-	.outer-ring {
-		width: 0;
-		height: 0;
-		border: 3px solid black;
-		@include border-radius(325px);
-	}
+
 	
 }
+
+$inner-ring-radius: 289px;
+$outer-ring-radius: 331px;
+	
+.inner-ring {
+	position: absolute;
+	width: $inner-ring-radius * 2;
+	height: $inner-ring-radius * 2;
+	left: 50%;
+	top: 50%;
+	margin-left: -($inner-ring-radius + 3);
+	margin-top: -($inner-ring-radius + 3);
+	border: 3px solid black;
+	@include border-radius($inner-ring-radius);
+}
+	
+.outer-ring {
+	position: absolute;
+	width: $outer-ring-radius * 2;
+	height: $outer-ring-radius * 2;
+	left: 50%;
+	top: 50%;
+	margin-left: -($outer-ring-radius + 3);
+	margin-top: -($outer-ring-radius + 3);
+	border: 3px solid black;
+	@include border-radius($outer-ring-radius);
+}
+
 
 .centered {
 	position: absolute;
@@ -198,7 +223,7 @@ $clock-radius: 350px;
 #hour-hand {
 	background-color: #333;
 	width: 18px;
-	height: 300px;
+	height: 220px;
 	
 	margin-left: -9px;
 	
@@ -208,7 +233,7 @@ $clock-radius: 350px;
 #minute-hand {
 	background-color: #333;
 	width: 12px;
-	height: 300px;
+	height: 320px;
 	
 	margin-left: -6px;
 	
@@ -218,7 +243,7 @@ $clock-radius: 350px;
 #second-hand {
 	background-color: #333;
 	width: 6px;
-	height: 300px;
+	height: 320px;
 	
 	margin-left: -3px;
 
